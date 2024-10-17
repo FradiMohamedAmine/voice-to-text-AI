@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio to Text</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Text</h1>
+        <button id="start-btn"><i class="fas fa-microphone"></i> Start Voice Recognition</button>
+        <button id="stop-btn" disabled>Stop Voice Recognition</button>
+        <p>Please wait a few moments when you press the stop button !</p>
+
+        <p id="status-msg"></p>
+        <textarea id="text-area" placeholder="Generated Text..."></textarea>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.10.0/dist/tf.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
